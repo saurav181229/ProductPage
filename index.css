@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    text-align: center;
+}
+
+.nav-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+.nav-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar ul li a:hover{
+    color: greenyellow;
+}
+.sub1{
+    display: none;
+}
+
+
+
+.nav-bar ul li:hover .sub1 {
+    display: block;
+    position: absolute;
+    background:white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.nav-bar ul li:hover .sub1 ul {
+    display: block;
+    margin: 10px;
+}
+.nav-bar ul li:hover .sub1 ul li {
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    width: 100px;
+    padding: 10px;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-bar ul li:hover .sub1 ul li:last-child{
+    border-bottom: none;
+}
+
+.sub2{
+    display: none;
+}
+.nav-bar ul li:hover .sub2 {
+    display: block;
+    justify-content: space-evenly;
+    position: absolute;
+    background:white;
+    margin-top: 15px;
+    margin-left: -15px;
+    
+}
+.nav-bar ul li:hover .sub2 ul li {
+    border-bottom: 1px dotted #ffffff;
+    background: transparent;
+    width: 100px;
+    padding: 10px;
+    border-radius: 0;
+    text-align: left;
+}
+.nav-bar ul li:hover .sub2 ul li:last-child{
+    border-bottom: none;
+}
+
+
+.view ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.back{
+ height: 30em;
+       background-image: url('./img1.jpg') ;
+       background-repeat: no-repeat;
+}
+
+.contents {
+    padding: 50px 50px 50px 50px;
+}
+.items{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.para {
+    color: #00FF00;
+}
+.btn{
+    background-color: #00FF00;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.btn:hover{
+    background: white;
+    color: black;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.newsletter{
+    padding: 10px;
+    background: whitesmoke;
+}
+.newsletter h1,p{
+    text-align: center;
+}
+.in{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.in input{
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.bottom{
+    margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.about{
+    text-align: center;
+    opacity: 0.7;
+}
+.products  h3 {
+    text-align: center;
+}
+.products li{
+    list-style: none;
+            text-align: center;
+            opacity: 0.7;
+            cursor: pointer;
+}
+.account h3{
+    text-align: center;
+}
+.account li{
+    list-style: none;
+    text-align: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    background: cornsilk;
+    height: 40px;
+    padding: 40px;
+}
